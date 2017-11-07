@@ -43,12 +43,8 @@
         padding: 30px;
 
     }
-    .desc{
-    }
     .desc p{
         font-size: 16px;
-        max-width: 70%;
-        margin: 0 auto;
     }
 
     .content .mat-list-item h4, .content .mat-list-item p{
