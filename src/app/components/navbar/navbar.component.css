@@ -1,0 +1,21 @@
+.mat-toolbar{
+    height: 70px;
+    background-color: #747474;
+    color: white;
+    font-weight: bold;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+.spacer{
+    flex: 1 1 auto;
+}
+span{
+    margin-left: 20px;
+}
+span:nth-child(1){
+    margin-left: 0;
+}
+img{
+    max-width: 100%;
+}

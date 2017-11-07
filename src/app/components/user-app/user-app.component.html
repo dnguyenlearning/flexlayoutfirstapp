@@ -1,0 +1,25 @@
+<div class="userInfor" fxLayout="row" fxLayout.lt-md="column">
+  <div class="menubar" fxFlex="300px" fxFlex.lt-md="" >
+    <mat-list fxLayout="column" fxLayout.lt-md="row" fxLayoutWrap>
+      <mat-list-item fxFlex *ngFor="let user of users">
+        <mat-icon mat-list-icon >face</mat-icon>
+        <h4 mat-line style="margin-bottom:5px; font-weight:bold">{{user.title}}</h4>
+        <p mat-line>Author : {{user.author}}</p>
+      </mat-list-item>
+    </mat-list>
+  </div>
+  <div class="content" [style.background]="colored"  fxFlex fxFlex.lt-md="600px"  fxLayoutAlign="center">
+    <div fxFlexAlign="center" fxLayout="column">
+      <mat-list >
+        <mat-list-item >
+          <mat-icon mat-list-icon >face</mat-icon>
+          <h4 mat-line>Name: <span>Duong Nguyen</span></h4>
+          <p mat-line>Time: <span>11/6/2017</span></p>
+        </mat-list-item>
+      </mat-list>
+      <div class="desc">
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+      </div>
+    </div>
+  </div>
+</div>

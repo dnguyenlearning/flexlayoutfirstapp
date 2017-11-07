@@ -1,0 +1,29 @@
+.contact{
+    border-top:1px solid gray;
+    border-bottom : 1px solid gray;
+    padding: 30px 100px;
+    background-color: #E3E3E3;
+}
+.user{
+    border: 1px solid gray;
+    background-color: white;
+}
+
+.form{
+    padding: 60px 0;
+    border: 1px solid gray;
+    background-color: white;
+}
+
+.footer img{
+    max-width: 30px;
+}
+.footer img:nth-child(2){
+    margin:0px 10px;
+}
+
+@media screen and (max-width:600px){
+    .contact{
+        padding: 20px;
+    }
+}

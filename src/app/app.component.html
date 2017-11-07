@@ -1,0 +1,21 @@
+<navbar ></navbar>
+<welcome [colored]="Maincolored"></welcome>
+<description [desc]="'Test create userInfo App using flex layout'"></description>
+<user-app [colored]="Maincolored"></user-app>
+<description [desc]="'Test create Zalo desktop App using flex layout'"></description>
+<zalo-app [colored]="Maincolored"></zalo-app>
+<description [desc]="'Contact Form'"></description>
+<contact-form [colored]="Maincolored"></contact-form>
+<footer [colored]="Maincolored"></footer>
+
+<div class="changeColor">
+    <div class="main">
+        <img (click)="showHideControl($event)" src="assets/images/control.png" alt="">
+    </div>
+    <div *ngIf="show==true" class="sub">
+        <img class="control1" (click)="changedColor(0)" src="assets/images/changeColor1.png" alt="">
+        <img class="control2" (click)="changedColor(1)" src="assets/images/changeColor2.png" alt="">
+        <img class="control3" (click)="changedColor(2)" src="assets/images/changeColor3.png" alt="">
+        <img class="control4" (click)="changedColor(3)" src="assets/images/changeColor4.png" alt="">
+    </div>
+</div>

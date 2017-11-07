@@ -1,0 +1,73 @@
+<div class="zaloApp" fxLayout="row">
+  <div fxFlex="80px;" fxHide.lt-sm="true" fxLayout="column" [style.background]="colored" class="small">
+    <div fxFlex fxLayoutAlign="center">
+      <img fxFlexAlign="start" src="assets/images/zaloProfile.png" alt="">
+    </div>
+    <div fxFlex fxLayoutAlign="center">
+        <div fxFlexAlign="center" class="net">
+          <img src="assets/images/message.png" alt="">
+          <img src="assets/images/social.png" alt="">
+          <img src="assets/images/outlook.png" alt="">
+          <img src="assets/images/share.png" alt="">
+        </div>
+    </div>
+    <div fxFlex fxLayoutAlign="center">
+      <img fxFlexAlign="end" src="assets/images/outlook.png" alt="">
+    </div>
+  </div>
+  <div fxHide.lt-md="true" fxFlex="300px;" class="user">
+    <div class="search" fxLayout="column">
+      <div fxFlexAlign="start" style="margin-bottom:5px;">Zalo Copied App</div>
+      <div fxFlexAlign="center">
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="Find your friends..." value="">
+        </mat-form-field>
+      </div>
+    </div>
+    <mat-list fxLayout="column">
+        <mat-list-item *ngFor="let user of users">
+          <mat-icon mat-list-icon >face</mat-icon>
+          <h4 mat-line style="margin-bottom:5px; font-weight:bold">{{user.name}}</h4>
+          <p mat-line>Author : {{user.message}}</p>
+        </mat-list-item>
+    </mat-list>
+  </div>
+  <div fxFlex class="chat" fxLayout="column">
+    <div class="header" fxFlex="80px"  fxLayout="row">
+      <div fxFlex fxFlexAlign="center">
+        <mat-list>
+          <mat-list-item>
+            <mat-icon mat-list-icon>face</mat-icon>
+            <h4 mat-line style="margin-bottom:5px;">Name</h4>
+            <p mat-line>current status</p>
+          </mat-list-item>
+        </mat-list>
+      </div>
+      <div fxFlex class="media" fxLayoutAlign="end" fxFlexAlign="center" >
+        <img src="assets/images/call.png" alt="call">
+        <img src="assets/images/video.png" alt="video">
+        <img src="assets/images/search.png" alt="search">
+        <img src="assets/images/media.png" alt="media">
+      </div>
+    </div>
+    <div class="chatContent" fxFlex fxFlex.lt-md="500px" fxLayoutAlign="center" >
+      <div fxFlexAlign="center">
+        <h1>Content</h1>
+      </div>
+    </div>
+    <div class="emoji" fxFlex="40px">
+      <img src="assets/images/emoji.png" alt="">
+      <img src="assets/images/picture.png" alt="">
+    </div>
+    <div class="footer" fxFlex="80px">
+      <mat-form-field fxFlex>
+        <textarea matInput placeholder="message"></textarea>
+      </mat-form-field>
+    </div>
+  </div>
+  <div fxFlex="200px" fxHide.lt-md="true"  class="control" fxLayoutAlign="center">
+    <div fxFlexAlign="center">
+      <span class="strong">Zalo</span> <span class="text">options</span>
+    </div>
+  </div>
+</div>

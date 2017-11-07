@@ -1,0 +1,33 @@
+<div class="contact" fxLayout="row">
+  <div fxFlex="300px" class="user" fxHide.lt-md="true" fxLayout="column">
+    <div fxFlex="50px" style="padding-left:10px;" fxLayoutAlign="start" [style.background]="colored">
+      <div fxFlex fxFlexAlign="center">
+        <h2>Description</h2>
+      </div>
+    </div>
+    <div fxFlex fxLayoutAlign="center" >
+      <div fxFlexAlign="center">
+        <img src="assets/images/avatarDuong.png" style="max-width:120px" alt="duong avatar">
+        <p style="margin:0; margin-left:10px;">Duong Nguyen</p>
+      </div>
+    </div>
+    <div fxFlex="50px" fxLayoutAlign="center" [style.background]="colored">
+      <div fxFlexAlign="center" class="footer" >
+        <img src="assets/images/email.png" alt="email">
+        <img src="assets/images/hangous.png" alt="email">
+        <img src="assets/images/messageLg.png" alt="email">
+      </div>
+    </div>
+  </div>
+  <div fxFlex fxLayoutAlign="center" class="form">
+    <div fxFlexAlign="center" fxFlex="400px;" fxFlex.lt-sm=""  fxLayout="column">
+      <mat-form-field >
+        <input matInput placeholder="Your Email">
+      </mat-form-field>
+      <mat-form-field >
+        <textarea matInput placeholder="feedBack"></textarea>
+      </mat-form-field>
+      <button mat-raised-button color="accent">Send</button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,21 @@
+.desc{
+    background-color: white;
+    color: black;
+    height: 50px;
+}
+h3{
+    font-size: 2em;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 568px){
+    h3{
+        font-size: 1.7em;
+    }
+}
+
+@media screen and (max-width: 376px){
+    h3{
+        font-size: 1em;
+    }
+}
